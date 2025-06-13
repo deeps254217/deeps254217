@@ -38,7 +38,10 @@ document.getElementById('chatboxForm').addEventListener('submit', e => {
         e.target.reset();
     }
 });
-
+ document.addEventListener("DOMContentLoaded", function () {
+        const sidebar = document.querySelector('.sidebar');
+        sidebar.style.display = 'none'; // Force-hide on first load
+    });
 //side-bar menu
 function showSidebar() {
     const sidebar = document.querySelector('.sidebar')
