@@ -72,12 +72,12 @@ header .navbar a:hover::after {
 
 .sidebar {
     position: fixed;
-    top: 0;
-    right: 0;
     height: 100vh;
     width: 200px;
+    top: 0;
+    right: 0;
     z-index: 999;
-    background-color: #00000030;
+    background-color: #0000009b;
     backdrop-filter: blur(10px);
     box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
     display: none;
@@ -85,7 +85,9 @@ header .navbar a:hover::after {
     align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
+
 }
+
 .sidebar li {
     width: 100%;
     margin-top: 20px;
@@ -106,12 +108,23 @@ header .navbar a:hover::after {
         gap: 10px; /* Adjust gap for smaller screens */
     }
 
+    .intro h2 {
+        font-size: smaller;
+    }
+
    .hideONMobile {
         display: none;
     } 
 
     .hideONpc {
         display: block;
+    }
+    header div {
+        width: 50px; /*less logo size*/
+    }
+        footer div{
+        font-size: 9px; /*less font size*/
+        padding: 5px;/*less breath space*/
     }
 }
 
@@ -120,11 +133,24 @@ header .navbar a:hover::after {
         font-size: 14px; /* Smaller font size */
         padding: 8px; /* Less padding */
     }
+
+    .intro h2 {
+        font-size: smaller;
+    }
+
     .hideONMobile {
         display: none;
     }
     .hideONpc {
         display: block;
+    }
+    header div {
+        width: 50px; /*less logo size*/
+    }
+
+    footer div{
+        font-size: 9px; /*less font size*/
+        padding: 5px;/*less breath space*/
     }
 }
 
